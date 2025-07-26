@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Academic Performance Prediction Result</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      text-align: center;
+      padding: 50px;
+    }
+    .result-box {
+      background: #ffffff;
+      padding: 30px;
+      margin: auto;
+      width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #2575fc;
+    }
+  </style>
+</head>
+<body>
+  <div class="result-box">
+    <h1>Predicted Performance:</h1>
+    <h2>{{ prediction }}</h2>
+    <a href="/">Try Again</a>
+  </div>
+</body>
+</html>

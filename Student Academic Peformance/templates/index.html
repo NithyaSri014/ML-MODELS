@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Academic Performance Predictor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: white;
+      text-align: center;
+      padding: 40px;
+    }
+    form {
+      background: white;
+      color: black;
+      padding: 30px;
+      border-radius: 10px;
+      width: 300px;
+      margin: auto;
+    }
+    input {
+      padding: 10px;
+      margin: 10px 0;
+      width: 100%;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #6a11cb;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Student Academic Performance Predictor</h1>
+  <form action="/predict" method="POST">
+    <label>Study Hours:</label><br>
+    <input type="number" name="study_hours" step="0.1" required><br>
+
+    <label>Attendance Percentage:</label><br>
+    <input type="number" name="attendance_percentage" min="0" max="100" required><br>
+
+    <label>Previous Grade (Numeric, e.g., A=4 to F=0):</label><br>
+    <input type="number" name="previous_grade_numeric" min="0" max="4" required><br>
+
+    <button type="submit">Predict</button>
+  </form>
+</body>
+</html>
